@@ -7,11 +7,11 @@
     >
       <img
         class="absolute w-16 z-10 top-0 right-0 translate-x-1/4 -translate-y-1/4 rotate-180"
-        src="./assets/quote.png"
+        src="./assets/orange.png"
       />
       <img
         class="absolute w-16 z-10 bottom-0 left-0 -translate-x-1/4 translate-y-1/4"
-        src="./assets/quote.png"
+        src="./assets/orange.png"
       />
       {{ quote.content }}
       <span
