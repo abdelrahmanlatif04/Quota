@@ -1,12 +1,18 @@
 <template>
   <div
-    class="w-4/5 m-auto h-[100vh] flex justify-center items-center flex-col gap-6"
+    class="w-4/5 m-auto min-h-[100vh] flex justify-center items-center flex-col gap-6"
   >
     <div
-      class="box w-full text-center rounded-xl bg-cyan-600 overflow-idden px-3 py-8 relative min-h-48 flex justify-center items-center text-white lg:text-3xl md:text-2xl sm:text-xl text-lg"
+      class="w-full text-center mt-5 rounded-xl bg-cyan-600 px-3 py-8 relative min-h-48 flex justify-center items-center text-white lg:text-3xl md:text-2xl sm:text-xl text-lg"
     >
-      <img class="imgs top-0 right-0 translate-x-1/4 -translate-y-1/4 rotate-180" src="./assets/quote.png" />
-      <img class="imgs bottom-0 left-0 -translate-x-1/4 translate-y-1/4" src="./assets/quote.png" />
+      <img
+        class="absolute w-16 z-10 top-0 right-0 translate-x-1/4 -translate-y-1/4 rotate-180"
+        src="./assets/quote.png"
+      />
+      <img
+        class="absolute w-16 z-10 bottom-0 left-0 -translate-x-1/4 translate-y-1/4"
+        src="./assets/quote.png"
+      />
       {{ quote.content }}
       <span
         class="text-base sm:text-xl absolute text-white font-semibold bg-cyan-600 w-full text-end left-0 bottom-0 pr-2 pb-2 rounded-b-xl"
@@ -79,9 +85,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.imgs {
-  @apply absolute w-16 z-10;
-}
-</style>
