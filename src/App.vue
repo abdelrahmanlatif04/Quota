@@ -3,7 +3,7 @@
     class="w-4/5 m-auto h-[100vh] flex justify-center items-center flex-col gap-6"
   >
     <div
-      class="box w-full h-fit text-center rounded-xl bg-cyan-600 px-5 relative min-h-48 flex justify-center items-center text-white lg:text-3xl md:text-2xl sm:text-xl text-lg"
+      class="box w-full h-fit text-center rounded-xl bg-cyan-600 px-5 pb-11 pt-5 relative min-h-48 flex justify-center items-center text-white  lg:text-3xl md:text-2xl sm:text-xl text-lg"
     >
       <img
         class="imgs top-0 right-0 translate-x-1/3 -translate-y-1/3"
@@ -15,7 +15,7 @@
       />
       {{ quote.content }}
       <span
-        class="text-xl absolute bottom-4 right-4 text-white font-semibold"
+        class="text-base sm:text-xl absolute bottom-2 right-2 text-white font-semibold"
         >{{ quote.originator.name }}</span
       >
     </div>
